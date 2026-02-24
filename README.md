@@ -151,22 +151,16 @@ pct_match           :  90.0
 - [ ] Deploy as REST API or web application
 - [ ] Expand to multi-label classification (breed + attributes)
 
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
 ## 👤 Author
 
 **Aakash Upadhyay**
 - GitHub: [@Aakash-U](https://github.com/Aakash-U)
 - LinkedIn: [Aakash Upadhyay](https://www.linkedin.com/in/aakash-upadhyay-524347137/)
 
-## 🙏 Acknowledgments
+## 📚 Acknowledgments
 
-- Pretrained models from [PyTorch Model Zoo](https://pytorch.org/vision/stable/models.html)
-- ImageNet dataset for transfer learning weights
-- Udacity AWS AI Scientist Nanodegree Program
+This project was completed as part of the **AWS AI Scientist Nanodegree Program** by AWS/Udacity.
+
+---
+
+**Note**: This project demonstrates practical application of transfer learning and CNN architectures for image classification tasks.
