@@ -1,8 +1,8 @@
 # CNN Dog Breed Classifier
 
-A deep learning image classification system that identifies dog breeds using pretrained Convolutional Neural Networks (CNNs). The project compares three state-of-the-art architectures—ResNet, AlexNet, and VGG—to determine the most effective model for breed classification.
+A deep learning image classification system that identifies dog breeds using pretrained Convolutional Neural Networks (CNNs). This project compares three state-of-the-art architectures—ResNet, AlexNet, and VGG—to determine the most effective model for breed classification.
 
-## 🎯 Project Overview
+## Project Overview
 
 This classifier addresses the challenge of distinguishing between dog breeds, dogs vs non-dogs, and evaluating model performance across different CNN architectures. By leveraging transfer learning with ImageNet-pretrained models, the system achieves high accuracy without requiring extensive training data or computational resources.
 
@@ -12,13 +12,13 @@ This classifier addresses the challenge of distinguishing between dog breeds, do
 - Compare performance across multiple CNN architectures
 - Provide actionable insights on model selection for image classification tasks
 
-## 📊 Results
+## Results
 
 Performance comparison across three CNN architectures on 40 test images (30 dogs, 10 non-dogs):
 
 | Model | Dog Detection | Breed Accuracy | Non-Dog Detection | Overall Match | Runtime |
 |-------|--------------|----------------|-------------------|---------------|---------|
-| **VGG-16** | **100%** | **93.3%** ✨ | **100%** | **90.0%** | 2s |
+| **VGG-16** | **100%** | **93.3%** | **100%** | **90.0%** | 2s |
 | ResNet-18 | 100% | 90.0% | 100% | 85.0% | <1s |
 | AlexNet | 100% | 80.0% | 100% | 77.5% | <1s |
 
@@ -30,7 +30,7 @@ Performance comparison across three CNN architectures on 40 test images (30 dogs
 - ResNet-18 offers the best speed-accuracy tradeoff
 - AlexNet, while fastest, sacrifices breed accuracy
 
-## 🚀 Features
+## Features
 
 - **Multi-Architecture Support**: Compare ResNet, AlexNet, and VGG models
 - **Transfer Learning**: Leverages ImageNet-pretrained weights
@@ -38,18 +38,18 @@ Performance comparison across three CNN architectures on 40 test images (30 dogs
 - **Batch Processing**: Run all models sequentially for comprehensive comparison
 - **Flexible Input**: Supports custom image directories and dog breed lists
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 - **Python 3.6+**
 - **PyTorch**: Deep learning framework
 - **torchvision**: Pretrained CNN models
 - **Pillow**: Image processing
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Aakash-U/Dog-Breed-Classifier-CNNs-.git
+git clone https://github.com/yourusername/dog-breed-classifier.git
 cd dog-breed-classifier
 ```
 
@@ -58,7 +58,7 @@ cd dog-breed-classifier
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
+## Usage
 
 ### Quick Start - Single Model
 ```bash
@@ -82,7 +82,7 @@ python test_classifier.py
 ```
 Quick test with a sample image to verify setup.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── check_images.py              # Main classification pipeline
@@ -100,7 +100,7 @@ Quick test with a sample image to verify setup.
 └── pet_images/                  # Sample test images (40 images)
 ```
 
-## 🔍 How It Works
+## How It Works
 
 ### Pipeline Architecture
 
@@ -119,7 +119,7 @@ Quick test with a sample image to verify setup.
 
 All models use ImageNet pretrained weights and classify images into 1000 categories, with dog breeds mapped from a curated list of 133 breeds.
 
-## 📈 Sample Output
+## Sample Output
 
 ```
 *** Results Summary for CNN Model Architecture VGG ***
@@ -135,29 +135,29 @@ pct_match           :  90.0
 ** Total Elapsed Runtime: 0:0:2
 ```
 
-## 🎓 Insights & Learnings
+## Insights and Learnings
 
 - **Transfer Learning Effectiveness**: Pretrained models significantly reduce training time and data requirements
 - **Architecture Tradeoffs**: Deeper networks (VGG) achieve higher accuracy but require more computation
 - **Dog Detection vs Breed Classification**: All models excel at binary dog/non-dog classification, but breed-specific accuracy varies significantly
 - **Real-World Application**: VGG-16 recommended for production use where accuracy is critical; ResNet-18 for resource-constrained environments
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
-- [ ] Add support for custom image uploads via web interface
-- [ ] Implement fine-tuning on dog-specific datasets (Stanford Dogs, ImageNet Dogs)
-- [ ] Integrate newer architectures (EfficientNet, Vision Transformers)
-- [ ] Add confidence scores and top-k predictions
-- [ ] Deploy as REST API or web application
-- [ ] Expand to multi-label classification (breed + attributes)
+- Add support for custom image uploads via web interface
+- Implement fine-tuning on dog-specific datasets (Stanford Dogs, ImageNet Dogs)
+- Integrate newer architectures (EfficientNet, Vision Transformers)
+- Add confidence scores and top-k predictions
+- Deploy as REST API or web application
+- Expand to multi-label classification (breed + attributes)
 
-## 👤 Author
+## Author
 
 **Aakash Upadhyay**
 - GitHub: [@Aakash-U](https://github.com/Aakash-U)
 - LinkedIn: [Aakash Upadhyay](https://www.linkedin.com/in/aakash-upadhyay-524347137/)
 
-## 📚 Acknowledgments
+## Acknowledgments
 
 This project was completed as part of the **AWS AI Scientist Nanodegree Program** by AWS/Udacity.
 
